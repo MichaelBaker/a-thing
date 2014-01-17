@@ -1,0 +1,103 @@
+Mayael's Aria
+RGW
+Enchantment
+WRG
+At the beginning of your upkeep, put a +1/+1 counter on each creature you control if you control a creature with power 5 or greater. Then you gain 10 life if you control a creature with power 10 or greater. Then you win the game if you control a creature with power 20 or greater.
+
+Darksteel Reactor
+4
+Artifact
+Indestructible (Effects that say "destroy" don't destroy this artifact.)
+At the beginning of your upkeep, you may put a charge counter on Darksteel Reactor.
+When Darksteel Reactor has twenty or more charge counters on it, you win the game.
+
+Maze's End
+Land
+Maze's End enters the battlefield tapped.
+T: Add 1 to your mana pool.
+3, T, Return Maze's End to its owner's hand: Search your library for a Gate card, put it onto the battlefield, then shuffle your library. If you control ten or more Gates with different names, you win the game.
+
+Helix Pinnacle
+G
+Enchantment
+G
+Shroud
+X: Put X tower counters on Helix Pinnacle.
+At the beginning of your upkeep, if there are 100 or more tower counters on Helix Pinnacle, you win the game.
+
+Barren Glory
+4WW
+Enchantment
+W
+At the beginning of your upkeep, if you control no permanents other than Barren Glory and have no cards in hand, you win the game.
+
+Biovisionary
+1GU
+Creature  - Human Wizard
+2 / 3
+UG
+At the beginning of the end step, if you control four or more creatures named Biovisionary, you win the game.
+
+Hellkite Tyrant
+4RR
+Creature  - Dragon
+6 / 5
+R
+Flying, trample
+Whenever Hellkite Tyrant deals combat damage to a player, gain control of all artifacts that player controls.
+At the beginning of your upkeep, if you control twenty or more artifacts, you win the game.
+
+Laboratory Maniac
+2U
+Creature  - Human Wizard
+2 / 2
+U
+If you would draw a card while your library has no cards in it, you win the game instead.
+
+Epic Struggle
+2GG
+Enchantment
+G
+At the beginning of your upkeep, if you control twenty or more creatures, you win the game.
+
+Test of Endurance
+2WW
+Enchantment
+W
+At the beginning of your upkeep, if you have 50 or more life, you win the game.
+
+Azor's Elocutors
+3(W/U)(W/U)
+Creature  - Human Advisor
+3 / 5
+WU
+At the beginning of your upkeep, put a filibuster counter on Azor's Elocutors. Then if Azor's Elocutors has five or more filibuster counters on it, you win the game.
+Whenever a source deals damage to you, remove a filibuster counter from Azor's Elocutors.
+
+Near-Death Experience
+2WWW
+Enchantment
+W
+At the beginning of your upkeep, if you have exactly 1 life, you win the game.
+
+Mortal Combat
+2BB
+Enchantment
+B
+At the beginning of your upkeep, if twenty or more creature cards are in your graveyard, you win the game.
+
+Abyssal Persecutor
+2BB
+Creature  - Demon
+6 / 6
+B
+Flying, trample
+You can't win the game and your opponents can't lose the game.
+
+Felidar Sovereign
+4WW
+Creature  - Cat Beast
+4 / 6
+W
+Vigilance, lifelink
+At the beginning of your upkeep, if you have 40 or more life, you win the game.

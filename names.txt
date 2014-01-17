@@ -1,0 +1,22 @@
+1 * Shield Sphere
+1 * Telepathy
+3 * Lantern of Insight
+3 * Quiet Purity
+3 * Ponder
+3 * Brainstorm
+4 * Force of Will
+1 * Stasis
+1 * Isochron Scepter
+3 * Disenchant
+4 * Boomerang
+4 * Show and Tell
+1 * Quicksilver Fountain
+2 * Lux Cannon
+1 * Progenitus
+1 * Emrakul, the Aeons Torn
+4 * Omniscience
+4 * Tundra
+4 * Ancient Tomb
+4 * Adarkar Wastes
+4 * Plains
+4 * Island

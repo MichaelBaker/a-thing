@@ -48,6 +48,10 @@ class ManaCost
     result
   end
 
+  def total
+    cost_hash.values.inject &:+
+  end
+
   private
 
   def count_type(type)
@@ -107,25 +111,83 @@ class Card
 end
 
 
-def cost1(card, cost)
-  if cost.valid? && cost.cost_hash.values.all? {|c| c <= 1}
-    puts card.display
-    puts
+def each_card(&block)
+  File.open("cards.xml", "r") do |f|
+    document = Nokogiri::XML::Document.parse f
+    document.css("card").each do |c|
+      card = Card.new(c)
+      cost = ManaCost.new(card.mana_text)
+      block.call(card, cost)
+    end
   end
 end
 
-def cost2(card, cost)
-  if cost.valid? && cost.cost_hash.any? {|(kind, c)| kind != "generics" && c == 2}
+banned_card_names = ["Amulet of Quoz",
+"Ancestral Recall",
+"Balance",
+"Bazaar of Baghdad",
+"Black Lotus",
+"Black Vise",
+"Bronze Tablet",
+"Channel",
+"Chaos Orb",
+"Contract from Below",
+"Darkpact",
+"Demonic Attorney",
+"Demonic Consultation",
+"Demonic Tutor",
+"Earthcraft",
+"Falling Star",
+"Fastbond",
+"Flash",
+"Frantic Search",
+"Goblin Recruiter",
+"Gush",
+"Hermit Druid",
+"Imperial Seal",
+"Jeweled Bird",
+"Library of Alexandria",
+"Mana Crypt",
+"Mana Drain",
+"Mana Vault",
+"Memory Jar",
+"Mental Misstep",
+"Mind Twist",
+"Mind's Desire",
+"Mishra's Workshop",
+"Mox Emerald",
+"Mox Jet",
+"Mox Pearl",
+"Mox Ruby",
+"Mox Sapphire",
+"Mystical Tutor",
+"Necropotence",
+"Oath of Druids",
+"Rebirth",
+"Shahrazad",
+"Skullclamp",
+"Sol Ring",
+"Strip Mine",
+"Survival of the Fittest",
+"Tempest Efreet",
+"Time Vault",
+"Time Walk",
+"Timetwister",
+"Timmerian Fiends",
+"Tinker",
+"Tolarian Academy",
+"Vampiric Tutor",
+"Wheel of Fortune",
+"Windfall",
+"Worldgorger Dragon",
+"Yawgmoth's Bargain",
+"Yawgmoth's Will"]
+
+task :default do
+  cards = []
+  each_card do |card, cost|
+    next if banned_card_names.include?(card.name)
     puts card.display
     puts
-  end
-end
-
-File.open("cards.xml", "r") do |f|
-  document = Nokogiri::XML::Document.parse f
-  document.css("card").each do |c|
-    card = Card.new(c)
-    cost = ManaCost.new(card.mana_text)
-    send(ARGV.first, card, cost)
   end
 end
